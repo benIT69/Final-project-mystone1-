@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Egg & Bread - Make your own bread</title>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+
+<link href='https://use.fontawesome.com/releases/v5.2.0/css/all.css' rel="stylesheet"  integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/make-your-own.css">
+</head>
+
+<body>
+    <div >
+            <span id = 'banner'>
+                <img src='img/logo-banhmi.jpg', id='logo', alt='image is loading.Please wait!'>
+                <span id ='slogan'>Welcome to Egg & Bread. Sign up today to get promotion code and daily fresh menu</span>
+             
+                <span id ='my-account'>
+                    <i class="fas fa-users"></i>
+                    <a href='/signin'> My Account</a>
+                    <i class="fas fa-shopping-cart"></i>  
+                    <a href='/Shopping'> Shopping cart </a>          
+                </span>        
+            </span>
+    </div>
+    <div>
+        <ul class ='nav-group' >
+            <li class ='nav'>
+                <a href='index.html'>Home</a>
+            </li>
+            <li class ='nav'>
+                <a href='menu.html'>Menu</a>
+            </li>
+            <li class ='nav'>
+                <a href='order'>Order online</a>
+            </li>
+            <li class='nav' >
+                <a href='about'>About Us</a>
+            </li>
+            <li class ='nav'>
+                <a href='contact'>Contact Us</a>
+            </li>
+        </ul>
+    </div>
+    
+    
+<body>
+    <div class ='vertical-banner'>
+        <img src='img/banh-mi-vietnamese-sanwich.jpg'>
+    </div>
+
+    <div class ='regForm'>
+        <form id="regForm" action="">
+
+            <h1>Choose ingredient to make your own crispy bread in 3 steps:</h1>
+            
+            <!-- One "tab" for each step in the form: -->
+            <div class="tab" id="meat">
+                <h2>Step 1:Choose your meat topper</h2>
+                <div class ="input"><input type ="checkbox"  name ="Egg: $2" value ="2" id ="ingredient"><label for ="egg">Egg: $2</label></div>
+                <div><input type ="checkbox"  name ="Charchiu Meat: $2" value ="2" id ="ingredient"></div>
+                <label for ="charchiu">Charchiu Meat: $2</label>
+                <input type ="checkbox" name="Liver sausage (Pate): $1" value ="1" id ="ingredient">
+                <label for ="liver">Liver sausage (Pate): $1</label>
+                <input type ="checkbox"  name ="Grilled pork with lemon grass: $3" value ="3" id ="ingredient">
+                <label for ="grilled-pork">Grilled pork with lemon grass: $3</label>
+                <input type ="checkbox"  name="Meatball with tomato sauce: $3" value ="3" id ="ingredient">
+                <label for ="grilled-pork">Meatball with tomato sauce: $3</label>
+                <input type ="checkbox" name="Special vietnamese sausage: $2" value ="2" id ="ingredient">
+                <label for ="sausage">Special vietnamese sausage: $2</label>
+
+                
+            </div>
+            
+            <div class="tab"  id="vegetable">
+                <h2>Step 2:Choose your vegetable</h2>
+                <input type ="checkbox"  name ="Pickled thin slide carrot" id ="ingredient">
+                <label for ="pickled1">Pickled thin slide carrot</label>
+                <input type ="checkbox"  name ="Pickled thin slide tunip" id ="ingredient">
+                <label for ="pickled2">Pickled thin slide tunip</label>
+                <input type ="checkbox"  name ="Cucumber" id ="ingredient">
+                <label for ="cucumber">Cucumber</label>
+                <input type ="checkbox"  name ="cilantro" id ="ingredient">
+                <label for ="cilantro">Cilantro</label>
+                <input type ="checkbox"  name ="Fresh red-green chilli" id ="ingredient">
+                <label for ="chilli">Fresh red-green chilli</label>
+                
+                
+            </div>
+            
+            <div class="tab"  id="sauce">
+                <h2>Step 3: Choose your sauce</h2>
+
+                <input type ="checkbox"  name ="Soya sauce" id ="ingredient">
+                <label for ="soya">Soya sauce</label>
+                <input type ="checkbox"  name ="Chilli sauce" id ="ingredient">
+                <label for ="chilli-sauce">Chilli sauce</label>
+                <input type ="checkbox"  name ="Special Vietnamese sauce" id ="ingredient">
+                <label for ="special-sauce">Special Vietnamese sauce</label>
+                <input type ="checkbox"  name ="Mayonaise" id ="ingredient">
+                <label for ="mayonaise">Mayonaise</label>
+
+            </div>
+            <div class="tab">
+                <h2>Review your choice before adding to cart</h2>
+                <p>Your choice:</p>
+                <ul>
+                    <li id ='meat-list'>Meat:</li>
+                    <li id ='vegi-list'>Vegtable:</li>
+                    <li id ='sauce-list'>Sauce:</li>
+                </ul>
+                <p id ="price">Price per each bread:</p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" size="2">
+                
+        
+            </div>
+            <div style="overflow:auto;">
+                <div style="float:right;">
+                  <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                  <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                </div>
+              </div>
+              <!-- Circles which indicates the steps of the form: -->
+              <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+              </div>
+              <script src="js/make-your-own.js"></script> 
+            
+</div>
+<div class="footer-basic">
+    <footer>
+        <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+        <p class="copyright">Egg & Bread © 2021</p>
+    </footer>
+</div>
+</body>
+
+
+</html> 
+  
